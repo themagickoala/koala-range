@@ -22,6 +22,8 @@ module.exports = {
         "semi": ["error", "always"],
         "react/jsx-uses-vars": 2,
         "react/jsx-uses-react": 2,
-        "require-jsdoc": 0
+        "require-jsdoc": 0,
+        "linebreak-style": 0,
+        "max-len": [1, 250],
     }
 };

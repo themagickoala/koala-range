@@ -1,31 +1,17 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react"
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-const IndexPage = ({data}) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi Gatsby</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-    </div>
+    <h1 className="text-3xl mb-4 sm:text-big pl-2 lg:pl-0 lg:text-giant font-medium">themagickoala</h1>
+    <p className="text-xl sm:text-3xl pl-2 mb-4">web developer</p>
+    <p className="text-xl sm:text-3xl pl-2 mb-4">father of one (soon to be two)</p>
+    <p className="text-xl sm:text-3xl pl-2 mb-4">games enthusiast</p>
+    <p className="text-xl sm:text-3xl pl-2 mb-4">humanist</p>
   </Layout>
-);
+)
 
-export default IndexPage;
-export const query = graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
+export default IndexPage
